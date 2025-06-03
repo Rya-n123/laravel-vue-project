@@ -2,107 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-.login-wrapper {
-    max-width: 700px;
-    margin: 50px auto;
-    padding: 30px;
-    background: white;
-    border-radius: 8px; /* rectangle corners */
-    box-shadow: 0 10px 30px rgba(0, 100, 0, 0.2);
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    animation: fadeInDown 0.8s ease forwards;
-}
-
-.logo-container {
-    text-align: center;
-    margin-bottom: 20px;
-    animation: fadeInBounce 1s ease;
-}
-
-.logo {
-    width: 300px;
-    animation: bounceIn 5s ease;
-}
-
-.input-animated:focus {
-    outline: none;
-    border-color: #6366f1;
-    box-shadow: 0 0 10px #6366f1aa;
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-}
-
-.login-btn {
-    width: auto; /* lets the button size fit the content */
-    padding: 12px 24px; /* vertical 12px, horizontal 24px */
-    background: #256d3f; /* dark green */
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: center; /* center the button text */
-    display: inline-block; /* make sure it sizes properly */
-    min-width: 120px; /* optional: set a minimum width */
-}
-
-.login-btn:hover {
-    background: #1b5330;
-    transform: scale(1.05);
-}
-
-.login-btn:active {
-    transform: scale(0.97);
-}
-
-/* Animations */
+/* Optional: Global custom animations, if you still need them */
 @keyframes fadeInDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-40px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeInBounce {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px);
-    }
-    60% {
-        opacity: 1;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes bounceIn {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-25px);
-    }
-    60% {
-        transform: translateY(-12px);
-    }
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-25px);
+  }
+  60% {
+    transform: translateY(-12px);
+  }
 }
 
-/* Optional global body background */
-/* body {
-    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-} */
+/* Optional global background (uncomment if needed) */
+/*
+body {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+}
+*/
