@@ -166,11 +166,13 @@ const submit = () => {
 
    <!-- Chat Button -->
 <div
-  class="fixed bottom-5 right-5 z-50 bg-blue-500 text-white px-5 py-3 rounded-full font-semibold shadow-lg cursor-pointer select-none transition-colors hover:bg-blue-600"
+  class="fixed bottom-5 right-5 z-50 px-7 py-4 bg-green-700 rounded-full font-extrabold uppercase text-white min-w-[180px] shadow-lg cursor-pointer select-none transition-colors duration-300 ease-in-out bounce-glow-pulse"
   @click="openChat"
 >
   {{ showChat ? 'Close Chat' : 'CHAT WITH US!' }}
 </div>
+
+
 
 <!-- Chat Popup -->
 <div

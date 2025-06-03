@@ -47,3 +47,29 @@ body {
   background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
 }
 */
+@keyframes megaBounce {
+    0%, 100% {
+      transform: translateY(0);
+      box-shadow: 0 0 15px 0 rgba(34,197,94, 0.7);
+    }
+    50% {
+      transform: translateY(-20px);
+      box-shadow: 0 0 35px 12px rgba(34,197,94, 1);
+    }
+  }
+  
+  @keyframes colorPulse {
+    0%, 100% {
+      background-color: #16a34a; /* green-700 */
+      box-shadow: 0 0 15px 0 rgba(34,197,94, 0.7);
+    }
+    50% {
+      background-color: #22c55e; /* green-500 */
+      box-shadow: 0 0 40px 14px rgba(34,197,94, 1);
+    }
+  }
+  
+  .bounce-glow-pulse {
+    animation: megaBounce 0.7s ease-in-out infinite, colorPulse 1.4s ease-in-out infinite;
+  }
+  
